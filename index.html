@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Card Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <h1>💖 Your Card Site</h1>
+      <div class="header-actions">
+        <button id="settingsBtn" class="btn-settings">⚙️ 设置</button>
+        <button id="exportBtn" class="btn-export">💾 导出</button>
+        <button id="importBtn" class="btn-import">📥 导入</button>
+      </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+      <!-- 摸鱼计数区域 -->
+      <section class="card moe-card">
+        <h2>📊 今日摸鱼统计</h2>
+        <div class="stats-display">
+          <div class="stat-item">
+            <span class="stat-label">摸鱼值</span>
+            <span id="moeCount" class="stat-value">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">工作值</span>
+            <span id="workCount" class="stat-value">0</span>
+          </div>
+        </div>
+        <div class="stats-actions">
+          <button id="moeBtn" class="btn-action moe-btn">+ 摸鱼</button>
+          <button id="workBtn" class="btn-action work-btn">+ 工作</button>
+        </div>
+      </section>
+
+      <!-- 今日情话/状态 -->
+      <section class="card status-card">
+        <h2>💭 今日状态</h2>
+        <p id="statusText" class="status-text">点击上方按钮开始记录</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
